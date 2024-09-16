@@ -20,8 +20,16 @@ public class Board {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long idx;
+
+    @Column
     private String title;
+
+    @Column
     private String contents;
+
+    @Column
     private String author;
+
+    @Column
     private LocalDateTime createdAt;
 }
